@@ -1,0 +1,43 @@
+{
+  "name": "testSoftware-electron-app",
+  "version": "0.0.2",
+  "description": "Minimal Electron app scaffold",
+  "author": "Your Name <you@example.com>",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron .",
+    "dist": "electron-builder"
+  },
+  "dependencies": {
+    "electron-log": "^5.4.3",
+    "electron-updater": "^5.3.0",
+    "git": "^0.1.5"
+  },
+  "devDependencies": {
+    "electron": "^26.0.0",
+    "electron-builder": "^26.4.0"
+  },
+  "build": {
+    "appId": "com.example.testsoftware",
+    "productName": "TestSoftware",
+    "publish": {
+      "provider": "github",
+      "owner": "RaffyCadano",
+      "repo": "testSoftware"
+    },
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "build/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": true,
+      "allowElevation": true,
+      "allowToChangeInstallationDirectory": true,
+      "artifactName": "${productName}-Setup-${version}.${ext}"
+    }
+  }
+}

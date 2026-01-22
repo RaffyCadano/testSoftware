@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Electron App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Hello, Electron! I'm Now Here</h1>
+  <div>Version: <span id="version">(loading...)</span></div>
+  <div class="controls">
+    <button id="ping">Ping main</button>
+    <button id="check-updates">Check for updates</button>
+    <button id="install-update" disabled>Install update</button>
+  </div>
+  <div id="reply"></div>
+  <div id="update-status" class="update-status">Status: <span id="update-text">idle</span></div>
+  <script src="renderer.js"></script>
+</body>
+</html>
