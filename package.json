@@ -1,6 +1,6 @@
 {
   "name": "testSoftware-electron-app",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Minimal Electron app scaffold",
   "author": "Your Name <you@example.com>",
   "main": "main.js",
