@@ -28,7 +28,7 @@
     "publish": {
       "provider": "github",
       "owner": "RaffyCadano",
-      "repo": "testSoftware",
+      "repo": "testSoftware"
     },
     "win": {
       "target": [
