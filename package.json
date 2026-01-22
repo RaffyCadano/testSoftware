@@ -24,13 +24,17 @@
     "publish": {
       "provider": "github",
       "owner": "RaffyCadano",
-      "repo": "testSoftware"
+      "repo": "testSoftware",
+      "private": false,
+      "releaseType": "release",
+      "vPrefixedTagName": false,
+      "channel": "latest",
+      "draft": false
     },
     "win": {
       "target": [
         "nsis"
       ]
     }
-    
   }
 }
